@@ -1,6 +1,6 @@
 #Author: Kiran Bharat Gaikwad
 #Date: 21/06/2023
-#Purpose: Estimate differentially expressed ion channels from rna-seq datasets of patients with breast cancer (DESeq2)
+#Purpose: Estimate differentially expressed ion channels from rna-seq datasets of patients with keratoconus (DESeq2)
 
 #Data import and preprocessing
 file = "htseq_all_sample_count.tsv",sep="\t", row.names = FALSE)
@@ -45,8 +45,8 @@ b = res_d[which(res_d$diffexpressed == 'DOWN'),]
 
 
 #Export results to files 
-write.table(a, file='PRJNA799648_up.txt', sep='\t', row.names = FALSE, col.names=TRUE)
-write.table(b, file='PRJNA799648_down.txt', sep='\t', row.names = FALSE, col.names=TRUE)
+write.table(a, file='KTCN_up.txt', sep='\t', row.names = FALSE, col.names=TRUE)
+write.table(b, file='KTCN_down.txt', sep='\t', row.names = FALSE, col.names=TRUE)
 write.table(res_d, file='all_genes.tsv', sep='\t', row.names = FALSE, col.names = TRUE)
 
 
