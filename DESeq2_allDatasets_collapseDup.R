@@ -65,5 +65,5 @@ b$ensembl_gene_id
 b
 nrow(b)
 #setwd('D:\\IOB\\Projects\\keratoconus\\DESeq\\GSE77938')
-write.table(a, file='replicatesCollapsed_ic_up_101223.txt', sep='\t', row.names = FALSE, col.names=TRUE)
-write.table(b, file='replicatesCollapsed_ic_down_101223.txt', sep='\t', row.names = FALSE, col.names=TRUE)
+write.table(a, file='replicatesCollapsed_allGenes_up.txt', sep='\t', row.names = FALSE, col.names=TRUE)
+write.table(b, file='replicatesCollapsed_allGenes_down.txt', sep='\t', row.names = FALSE, col.names=TRUE)
